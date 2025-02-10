@@ -1,5 +1,7 @@
 # server-stat
 
+The project from: https://roadmap.sh/projects/server-stats
+
 ## 📌 Overview
 This project contains a **Bash script (`server-stat.sh`)** that analyzes basic server performance statistics, including:
 - ✅ CPU Usage
