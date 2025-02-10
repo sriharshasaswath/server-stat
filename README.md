@@ -10,8 +10,8 @@ This project contains a **Bash script (`server-stat.sh`)** that analyzes basic s
 ## STEPS
 1. Make the script executable:
    ```bash
-   chmod +x server-stats.sh
+   chmod +x server-stat.sh
 
 2. Run the script:
    ```bash
-   ./server-stats.sh
+   ./server-stat.sh
