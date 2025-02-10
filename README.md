@@ -1,7 +1,7 @@
 # server-stat
 
 ## 📌 Overview
-This project contains a **Bash script (`server-stats.sh`)** that analyzes basic server performance statistics, including:
+This project contains a **Bash script (`server-stat.sh`)** that analyzes basic server performance statistics, including:
 - ✅ CPU Usage
 - ✅ Memory Usage (Free vs Used)
 - ✅ Disk Usage (Free vs Used)
