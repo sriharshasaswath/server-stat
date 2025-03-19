@@ -24,7 +24,7 @@ jobs:
       run: |
         ssh -i ~/.ssh/id_rsa ubuntu@${{ secrets.EC2_HOST }} << 'EOF'
           cd /home/ubuntu/app
-          git pull origin main
+          git clone https://github.com/sriharshasaswath/server-stat.git
           npm install
           nohup node node.js > output.log 2>&1 &
         EOF
