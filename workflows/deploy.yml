@@ -23,7 +23,7 @@ jobs:
     - name: Deploy Application
       run: |
         ssh ec2-user@${{ secrets.EC2_HOST }} << 'EOF'
-          cd /home/ec2-user/app
+          cd /home/ubuntu/app
           git pull origin main
           npm install
           nohup node node.js > output.log 2>&1 &
