@@ -23,8 +23,10 @@ jobs:
     - name: Deploy Application
       run: |
         ssh -i ~/.ssh/id_rsa ubuntu@${{ secrets.EC2_HOST }} << 'EOF'
-          cd /home/ubuntu/app
+          sudo rm -rf /home/ec2-user/app
           git clone https://github.com/sriharshasaswath/server-stat.git
+          cd /home/ubuntu/app
           npm install
+          pkill node || true
           nohup node node.js > output.log 2>&1 &
         EOF
