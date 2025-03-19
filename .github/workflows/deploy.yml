@@ -22,7 +22,7 @@ jobs:
 
     - name: Deploy Application
       run: |
-        ssh ubuntu@${{ secrets.EC2_HOST }} << 'EOF'
+        ssh -i ubuntu@${{ secrets.EC2_HOST }} << 'EOF'
           cd /home/ubuntu/app
           git pull origin main
           npm install
