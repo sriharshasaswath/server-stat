@@ -26,5 +26,5 @@ jobs:
           cd /home/ubuntu/app
           git pull origin main
           npm install
-          nohup node node.js > output.log 2>&1 &
+          node node.js
         EOF
